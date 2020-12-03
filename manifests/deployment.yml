@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: admsmwkuard 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admsmwkuard
+  template:
+    metadata:
+      labels:
+        app: admsmwkuard 
+    spec:
+      containers:
+        - name: admsmwkuard 
+          image: smwacrok2del.azurecr.io/admsmwkuard
+          ports:
+          - containerPort: 80
