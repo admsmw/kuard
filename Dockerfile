@@ -16,7 +16,7 @@ COPY . .
 ENV VERBOSE=0
 ENV PKG=github.com/kubernetes-up-and-running/kuard
 ENV ARCH=amd64
-ENV VERSION=ADMSMWDEMO
+ENV VERSION=DEMOCI2ACR
 
 # Do the build. Script is part of incoming sources.
 RUN build/build.sh
